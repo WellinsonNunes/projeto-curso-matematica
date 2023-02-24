@@ -51,9 +51,24 @@ div.menu {
     font-weight: normal;
     padding: 5px;
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.507);
-    
 
 }
+    
+div.avancar {
+    background-color: #ffffff;
+    left: 40%;
+    margin: 10px 30%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.507);
+    
+}
+
+div.avancar > p {
+    color: white;
+    text-decoration: none;
+}
+
+
 
 .btn:hover {
     background-color: black;
@@ -95,16 +110,22 @@ div.objetivo {
     background-color: rgba(0, 255, 255, 0.842);
     border-radius: 5px;
     padding: 5px;
-    box-shadow: 0PX 7px 9px rgba(0, 0, 0, 0.342);
+    box-shadow: 0PX 7px 9px rgba(0, 0, 0, 0.185);
+}
+
+div.objetivo > p {
+    margin: 0px 10px 10px;
 }
 
 div.objetivo > ul {
     list-style-type:'\1F5F8\00A0';
     list-style-position: inside;
+    margin-left: 10px;
 }
 
 div.video {
     background-color: #aaa8af80;
+    margin: 20px -20px 30px -20px;
     padding: 20px;
     padding-bottom: 50%;
     position: relative;
@@ -112,8 +133,8 @@ div.video {
 
 div.video > iframe {
     position: absolute;
-    top: 20px;
-    left: 40px;
+    top: 5%;
+    left: 5%;
     width: 90%;
     height: 90%;
 }
@@ -128,6 +149,7 @@ main p {
 
 h1 {
     font-family: 'Bebas Neue', cursive;
+    background-color: white;
     color: black;
     font-weight: bold;
     text-align: center;
@@ -136,9 +158,10 @@ h1 {
 
 h2 {
     font-family: 'Rubik', sans-serif;
+    background-color: white;
     text-align: center;
     box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.466);
-    top: 50px;
+    margin-top: 20px;
 }
 
 h2 p {
