@@ -8,20 +8,43 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family= Tilt +Warp & display=swap');
 
-        body{
-            background-image: url('imagens/fundo-black.png');
-            background-position: bottom center;
-            background-repeat: no-repeat;
-            background-size: cover;
+        body, main {
             height: 100vh;
+            background-color: black;
         }
 
         main {
-            min-width: 300px;
-            max-width: 1300px;
-            padding: 20px;
-            margin: auto;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        
+
+        .buttonInicio {
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: white;
+            cursor: pointer;
+            transition: 0.4s;
+            
+        }
+
+        .buttonInicio:hover {
+            background-color: yellow;
+            color: black;
+            border-color: white;
+        }
+
+        
+
 
         span {
             font-family: 'Tilt Warp', cursive;
@@ -40,20 +63,20 @@
             background-color: yellow;
             text-align: center;
             padding: 5px;
-            margin: 0px -10px;
+            
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: 14px;
             
         }
 
-        section.container {
-            height: 250px;
-            background-color: aquamarine;
+        section.videos {
+            flex: 1 0 100px;
+            padding: 10px;
             display: flex;
-            gap: 5px 15px;
-            justify-content: center;
-            align-items: center;
             flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
         }
 
         div.quadrado {
@@ -74,13 +97,13 @@
 
 
         footer {
-            background-color: black;
-            padding: 5px;
+            background-color: rgb(100, 100, 100);
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             color: white;
             margin: 10px -10px 0px -10px;
             text-align: center;
             font-size: 14px;
+            padding: 20px;
         }
 
         a {
@@ -104,34 +127,48 @@
 <body>
     <header>
         <img src="imagens/logo-black.png" alt="logo">
+        <div class="button">
+            <a href="index.html">
+                <button class="buttonInicio">
+                    Home
+                </button>
+            </a>
+        </div>
     </header>
 
-    <main>
-        <h1><span>Parabéns</span>, você conseguiu sair do zero da matemática.</h1>
-        <h2>Aproveite e assita uma das aulas bônus do curso, feito especialmente pra você que chegou até aqui. </h2>
+    
+        <main>
+            <section class="texto">
+                <h1><span>Parabéns</span>, você conseguiu sair do zero da matemática.</h1>
+                <h2>Aproveite e assita uma das aulas bônus do curso, feito especialmente pra você que chegou até aqui. </h2>
+            </section>
+            
+            <section class="videos">
+                <div class="quadrado" id="q1">
+                    <iframe width="300" height="200" src="https://www.youtube.com/embed/PiK_Zx9G7X0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="quadrado" id="q2">
+                    <iframe width="300" height="200" src="https://www.youtube.com/embed/Xwg68FzjUGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="quadrado" id="q3">
+                    <iframe width="300" height="200" src="https://www.youtube.com/embed/bjREck5RITY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="quadrado" id="q4">
+                    <iframe width="300" height="200" src="https://www.youtube.com/embed/plutXl8yI8M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <footer>
+                <p >Site criado por <strong>wellinsonnunes</strong> para o canal <strong><a href="https://www.youtube.com/channel/UCylJ1NV1BinqNBnlnl1iWPw" target="_blank">profwellinsonnunes</a></strong></p>
+            </footer>
+
+            
+        </main>
 
         
-        <section class="container">
-            <div class="quadrado" id="q1">
-                <iframe width="300" height="200" src="https://www.youtube.com/embed/PiK_Zx9G7X0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <div class="quadrado" id="q2">
-                <iframe width="300" height="200" src="https://www.youtube.com/embed/Xwg68FzjUGQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <div class="quadrado" id="q3">
-                <iframe width="300" height="200" src="https://www.youtube.com/embed/bjREck5RITY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-            <div class="quadrado" id="q4">
-                <iframe width="300" height="200" src="https://www.youtube.com/embed/plutXl8yI8M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-        </section>
-
-            <p><a href="index.html">voltar ao início.</a></p>
         
-    </main>
+    
 
-    <footer>
-        Site criado por <strong>wellinsonnunes</strong> para o canal <strong><a href="https://www.youtube.com/channel/UCylJ1NV1BinqNBnlnl1iWPw" target="_blank">profwellinsonnunes</a></strong>
-    </footer>
+    
 </body>
 </html>
