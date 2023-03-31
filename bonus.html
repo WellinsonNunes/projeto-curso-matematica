@@ -10,10 +10,10 @@
 
         body{
             background-image: url('imagens/fundo-black.png');
-            background-position: center center;
+            background-position: bottom center;
             background-repeat: no-repeat;
             background-size: cover;
-            height: 100%;
+            height: 100vh;
         }
 
         main {
@@ -46,13 +46,23 @@
             
         }
 
+        section.container {
+            height: 250px;
+            background-color: aquamarine;
+            display: flex;
+            gap: 5px 15px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
         div.quadrado {
-            display: inline-table;
-            margin-right: 10px;
+            
+            
             border: 2px solid yellow;
             height: 200px;
             width: 300px;
-            margin-top: 10px;
+            
             box-shadow: 0px 7px 9px rgba(138, 138, 138, 0.507);
     
         
@@ -101,6 +111,7 @@
         <h2>Aproveite e assita uma das aulas bônus do curso, feito especialmente pra você que chegou até aqui. </h2>
 
         
+        <section class="container">
             <div class="quadrado" id="q1">
                 <iframe width="300" height="200" src="https://www.youtube.com/embed/PiK_Zx9G7X0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
@@ -113,6 +124,7 @@
             <div class="quadrado" id="q4">
                 <iframe width="300" height="200" src="https://www.youtube.com/embed/plutXl8yI8M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
+        </section>
 
             <p><a href="index.html">voltar ao início.</a></p>
         
